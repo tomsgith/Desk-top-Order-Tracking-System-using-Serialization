@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.view.viewPurchasedcontroller">
+   <children>
+      <TableView fx:id="tableId" layoutX="14.0" layoutY="14.0" prefHeight="357.0" prefWidth="635.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tId" prefWidth="75.0" text="PId" />
+          <TableColumn fx:id="desc" prefWidth="100.0" text="desc" />
+            <TableColumn fx:id="price" prefWidth="82.0" text="price" />
+            <TableColumn fx:id="type" prefWidth="94.0" text="Type" />
+            <TableColumn fx:id="sto" prefWidth="97.0" text="Plocation" />
+            <TableColumn fx:id="SDat" prefWidth="87.0" text="SHDate" />
+            <TableColumn fx:id="Od" prefWidth="92.0" text="Orderdate" />
+        </columns>
+      </TableView>
+      <Label layoutX="64.0" layoutY="365.0" prefHeight="21.0" prefWidth="168.0" text="Trackong Number" />
+      <Label fx:id="te" layoutX="300.0" layoutY="365.0" prefHeight="21.0" prefWidth="168.0" text="Label" />
+   </children>
+</AnchorPane>

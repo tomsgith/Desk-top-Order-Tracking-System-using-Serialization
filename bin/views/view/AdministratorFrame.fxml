@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="b" minHeight="400.0" minWidth="600.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.view.AdministratorFrameController">
+   <top>
+      <Label alignment="CENTER" prefHeight="26.0" prefWidth="135.0" text="ADMINISTRATOR" textFill="#bc1313" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="15.0" layoutY="44.0" mnemonicParsing="false" onAction="#loadCProductForm" prefHeight="31.0" prefWidth="199.0" text="ADD/UPDATE PRODUCT" textFill="#d01414">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button layoutX="17.0" layoutY="107.0" mnemonicParsing="false" onAction="#loadshippingForm" prefHeight="25.0" prefWidth="133.0" text="SHIPPMENT" textFill="#c61414">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button layoutX="15.0" layoutY="168.0" mnemonicParsing="false" onAction="#loadBilltForm" prefHeight="25.0" prefWidth="137.0" text="BILLING" textFill="#c91515">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button layoutX="12.0" layoutY="233.0" mnemonicParsing="false" onAction="#loadCustomerForm" prefHeight="31.0" prefWidth="188.0" text="ADD/EDIT CUSTOMER" textFill="#d01919">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

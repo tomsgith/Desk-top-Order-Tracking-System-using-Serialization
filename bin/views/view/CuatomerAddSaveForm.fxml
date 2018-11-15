@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.view.CusstomerAddSaveFramecontroller">
+   <children>
+      <Label layoutX="20.0" layoutY="94.0" text="FIRST NAME" textFill="#da0b0b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="132.0" prefHeight="17.0" prefWidth="66.0" text="LAST NAME" textFill="#da0b0b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="220.0" prefHeight="21.0" prefWidth="83.0" text="PASSWORD" textFill="#da0b0b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="cuId" layoutX="126.0" layoutY="171.0" prefHeight="25.0" prefWidth="231.0" />
+      <TextField fx:id="fName" layoutX="126.0" layoutY="89.0" prefHeight="25.0" prefWidth="231.0" />
+      <TextField fx:id="Lname" layoutX="127.0" layoutY="127.0" prefHeight="25.0" prefWidth="231.0" />
+      <TextField fx:id="pass" layoutX="126.0" layoutY="216.0" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="14.0" layoutY="176.0" text="CUSTOMER ID" textFill="#da0b0b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="274.0" layoutY="355.0" mnemonicParsing="false" onAction="#addcustomer" text="ADD CUSTOMER" textFill="#eb0e0e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="168.0" layoutY="355.0" mnemonicParsing="false" onAction="#SetCustomer" text="SEARCH" textFill="#eb0e0e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ComboBox fx:id="rate" layoutX="126.0" layoutY="259.0" prefHeight="31.0" prefWidth="231.0" />
+      <Label layoutX="21.0" layoutY="264.0" prefHeight="21.0" prefWidth="83.0" text="RATE" textFill="#da0b0b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="error" layoutX="126.0" layoutY="304.0" prefHeight="31.0" prefWidth="211.0" textFill="#e11717" />
+      <Button layoutX="421.0" layoutY="355.0" mnemonicParsing="false" onAction="#Clear" text="Clear" textFill="#eb0e0e">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="72.0" layoutY="355.0" mnemonicParsing="false" onAction="#addcustomer" text="UPDATE" textFill="#eb0e0e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

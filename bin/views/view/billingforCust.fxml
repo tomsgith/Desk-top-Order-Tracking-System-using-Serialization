@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.view.billingformControls">
+   <top>
+      <AnchorPane prefHeight="96.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="202.0" layoutY="-3.0" prefHeight="53.0" prefWidth="147.0" text="Orde Bill" textFill="#cad05e">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="61.0" prefHeight="21.0" prefWidth="132.0" text="Customer ID">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <ComboBox fx:id="cuId" layoutX="315.0" layoutY="56.0" onAction="#select" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="46.0" layoutY="53.0" text="Order Date">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="239.0" layoutY="53.0" text="Number of Products">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <Label layoutX="466.0" layoutY="53.0" text="Total Price">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <TextField fx:id="OrderDate" layoutX="5.0" layoutY="99.0" prefHeight="31.0" prefWidth="154.0" />
+            <TextField fx:id="numberofPr" layoutX="181.0" layoutY="99.0" />
+            <TextField fx:id="total" layoutX="396.0" layoutY="99.0" prefHeight="31.0" prefWidth="170.0" />
+            <Button layoutX="419.0" layoutY="148.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="94.0" text="Search Bill" />
+            <Label fx:id="error" layoutX="14.0" layoutY="148.0" prefHeight="21.0" prefWidth="101.0" textFill="#b51313" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onDragDetected="#GotoCustomer" prefHeight="459.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.view.loginController">
+   <children>
+      <Label layoutX="54.0" layoutY="187.0" prefHeight="17.0" prefWidth="63.0" text="USERID" textFill="#dd0d0d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="224.0" prefHeight="21.0" prefWidth="89.0" text="PASSWORD" textFill="#dd0d0d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="uId" layoutX="165.0" layoutY="182.0" />
+      <TextField fx:id="pass" layoutX="165.0" layoutY="219.0" />
+      <Label alignment="CENTER" layoutX="94.0" layoutY="100.0" prefHeight="45.0" prefWidth="274.0" text="Please Log in" textFill="#e11313">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font></Label>
+      <Button layoutX="303.0" layoutY="263.0" mnemonicParsing="false" text="EXIT" textFill="#e11010">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="162.0" layoutY="263.0" mnemonicParsing="false" onAction="#LogIn" prefHeight="31.0" prefWidth="118.0" text="SIGN IN" textFill="#eb1414">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label fx:id="error" layoutX="159.0" layoutY="316.0" prefHeight="21.0" prefWidth="203.0" textFill="#e10909">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

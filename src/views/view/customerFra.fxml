@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="b" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.view.customerFramecontroler">
+   <top>
+      <AnchorPane prefHeight="27.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="426.0" layoutY="4.0" text="cusotmer" textFill="#686b49">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="35.0" layoutY="189.0" mnemonicParsing="false" onAction="#LoadtrackOrder" prefHeight="31.0" prefWidth="140.0" text="Track Order" textFill="#e40a0a">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button layoutX="35.0" layoutY="96.0" mnemonicParsing="false" onAction="#loadPurchaseframe" prefHeight="31.0" prefWidth="140.0" text="Purchase Product" textFill="#e40a0a">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button layoutX="36.0" layoutY="144.0" mnemonicParsing="false" onAction="#LoadViewproducts" prefHeight="31.0" prefWidth="139.0" text="View Cart" textFill="#e40a0a">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
